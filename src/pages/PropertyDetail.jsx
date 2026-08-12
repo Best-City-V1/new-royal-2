@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FiHome, FiMaximize2, FiCalendar, FiTrendingUp, FiUsers, FiDollarSign, FiGrid } from 'react-icons/fi';
-import { FacebookShareButton, TwitterShareButton, LinkedinShareButton } from 'react-share';
+import { FacebookShareButton, XShareButton, LinkedinShareButton } from 'react-share';
 import { FaFacebook, FaTwitter, FaLinkedin, FaEthereum, FaWallet } from 'react-icons/fa';
 
 function PropertyDetail() {
@@ -297,9 +297,9 @@ function PropertyDetail() {
                 <FacebookShareButton url={shareUrl}>
                   <FaFacebook className="text-2xl text-blue-600 hover:opacity-80" />
                 </FacebookShareButton>
-                <TwitterShareButton url={shareUrl}>
+                <XShareButton url={shareUrl}>
                   <FaTwitter className="text-2xl text-sky-500 hover:opacity-80" />
-                </TwitterShareButton>
+                </XShareButton>
                 <LinkedinShareButton url={shareUrl}>
                   <FaLinkedin className="text-2xl text-blue-700 hover:opacity-80" />
                 </LinkedinShareButton>
